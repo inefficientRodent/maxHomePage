@@ -9,10 +9,14 @@
 <script src="main.js" charset="utf-8" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="loadFunction()">
 
-<div class="titleWrapper">
-<h1 class="title">Wilds</h1>
+<div id="loadScreen" class="loadingScreen">
+	<div class="loadWheel"></div>
+</div>
+
+<div class="titleWrapper" id="titleWrap">
+	<h1 class="title" id="fuckSake">Wilds</h1>
 </div>
 
 <div class="tabs" id="navigation">
@@ -23,15 +27,21 @@
 </div>
 
 
-<div class="gameContainer">
+
+
+<div class="gameContainer" id="gameContainer">
 	<div id="playerBase" class="pBase">
 		<!--left!-->
 		<div id="leftCol" class="column">
-			<h1>Help</h1>
+			<h1>Buildings, constructions</h1>
 		</div>
-		
 		<div id="rightCol" class="column">
 			<h3 id="pBaseMessage">You are at your base. You think it's probably season.</h3>
+			
+			<h3 id="pBaseTemp">It feels temperature</h3>
+			<h3 id="playerHealth">You feel okay.</h3>
+			<h3 id="playerHunger">You feel hunger.</h3>
+			<h3 id="playerThirst">You feel thirst.</h3>
 		</div>
 	</div>
 

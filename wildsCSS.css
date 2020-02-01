@@ -5,6 +5,7 @@
 	}
 	
 	h1.title {
+		display:none;
 		color:green;
 		margin: 0 auto;
 		
@@ -12,6 +13,7 @@
 	
 	
 	.titleWrapper {
+		display:none;
 		min-width: 1000px;
 		max-width: 1250px;
 		height:auto;
@@ -23,10 +25,13 @@
 	}
 	
 	.gameContainer {
+		display:none;
+		position:absolute;
 		text-align:center;
-		top:50px;
+		transform:translate(-50%, -41%);
+		top:30%;
 		left:50%;
-		min-width: 50%;
+		min-width: 1250px;
 		max-width: 1250px;
 		background-color:white;
 		opacity:0.7;
@@ -36,7 +41,7 @@
 	
 	/*This is stuff for the tab menu at the top. Straight forward stuff.*/
 	.tabs {
-		display:flex;
+		display:none;
 		align-items:stretch;
 		justify-content:space-between;
 		overflow:hidden;
@@ -62,11 +67,50 @@
 	.tabs button.active {
 		background-color:grey;
 	}
+	
+	/*Loading Screen*/
+	.loadWheel {
+		position: absolute;
+		left: 50%;
+		top: 40%;
+		transform:translate(-50%, -50%);
+		z-index: 1;
+		min-width:150px;
+		max-width:150px;
+		min-height: 150px;
+		max-height: 150px;
+		margin: -75px 0 0 -75px;
+		border: 16px solid #f3f3f3;
+		border-radius: 50%;
+		border-top: 16px solid #3498db;
+		width: 120px;
+		height: 120px;
+		-webkit-animation: spin 2s linear infinite;
+		animation: spin 2s linear infinite;
+	}
+	@-webkit-keyframes spin {
+		0% { -webkit-transform: rotate(0deg); }
+		100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+	
+	.loadingScreen {
+		position:fixed;
+		display:block;
+		background:white;
+		width:10000px;
+		height:10000px;
+	}
+	
 
 	/*Classes for the tabs proper*/
 	.pBase {
-		display:inline-block;
-		top:50px;
+		display:none;
+		top:5%;
 		min-height:500px;
 		max-height:700px;
 		min-width: 1100px;
@@ -74,20 +118,23 @@
 		background-color:white;
 		opacity:0.7;
 		margin:auto;
+		animation:fadeEffect 1s;
 	}
 	
 	.column {
 		padding:10px;
 		width:40%;
 		max-width:40%;
-		min-height:100%;
+		max-height:500px;
 		overflow-y:auto;
 		overflow-x:hidden;
+		background-color:white;
+		opacity:2;
 	}
 	
 	#leftCol {
 		position:absolute;
-		width:30%;
+		width:40%;
 		float:left;
 		text-align:left;
 	}
@@ -102,14 +149,46 @@
 	/*Forest class*/
 	.Forest {
 		display:none;
+		top:50px;
+		min-height:500px;
+		max-height:700px;
+		min-width: 1100px;
+		max-width: 1100px;
+		background-color:white;
+		opacity:0.7;
+		margin:auto;
+		animation:fadeEffect 1s;
 	}
 	
 	.Inventory {
 		display:none;
+		top:50px;
+		min-height:500px;
+		max-height:700px;
+		min-width: 1100px;
+		max-width: 1100px;
+		background-color:white;
+		opacity:0.7;
+		margin:auto;
+		animation:fadeEffect 1s;
 	}
 	
 	.Options {
 		display:none;
+		top:50px;
+		min-height:500px;
+		max-height:700px;
+		min-width: 1100px;
+		max-width: 1100px;
+		background-color:white;
+		opacity:0.7;
+		margin:auto;
+		animation:fadeEffect 1s;
+	}
+	
+	@keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
 	}
 	
 }
