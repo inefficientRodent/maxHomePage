@@ -19,10 +19,10 @@ var gameLoop = window.setInterval(function() {
 /*The Stupid Stuff That Makes Things Work Or Whatever*/
 var myVar;
 function loadFunction() {
-	myVar = setTimeout(showPage, 1000)
+	myVar = setTimeout(showPage, 3000)
 }
 function showPage() {
-	document.getElementById("loadScreen").style.display = "none";
+	document.getElementById("load").style.display = "none";
 	document.getElementById("titleWrap").style.display = "block";
 	document.getElementById("fuckSake").style.display = "block";
 	document.getElementById("navigation").style.display = "flex";
