@@ -5,13 +5,49 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.png">
-<style>
-body {
-	background-image: url('spacebg.png');
-}
-</style>
+<link rel="stylesheet" type="text/css" href="wildsCSS.css">
+<script src="main.js" charset="utf-8" type="text/javascript"></script>
 </head>
 
 <body>
+
+<div class="titleWrapper">
+<h1 class="title">Wilds</h1>
+</div>
+
+<div class="tabs" id="navigation">
+	<button class="navLink" onclick="tab('playerBase')">Camp</button>
+	<button class="navLink" onclick="tab('Forest')">Forest</button>
+	<button class="navLink" onclick="tab('Inventory')">Inventory</button>
+	<button class="navLink" onclick="tab('Options')">Stats</button>
+</div>
+
+
+<div class="gameContainer">
+	<div id="playerBase" class="pBase">
+		<!--left!-->
+		<div id="leftCol" class="column">
+			<h1>Help</h1>
+		</div>
+		
+		<div id="rightCol" class="column">
+			<h3 id="pBaseMessage">You are at your base. You think it's probably season.</h3>
+		</div>
+	</div>
+
+<div id="Forest" class="Forest">
+	This is the Forest.
+</div>
+
+<div id="Inventory" class="Inventory">
+	This is the inventory.
+</div>
+
+<div id="Options" class="Options">
+	This is the Stats page.
+</div>
+
+
+</div>
 
 </body>

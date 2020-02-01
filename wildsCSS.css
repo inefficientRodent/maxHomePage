@@ -1,0 +1,180 @@
+@media screen and (min-width:1000px) {
+	body {
+		background-image: url('spacebg.png');
+		font-family:"Courier New", "Ariel";
+	}
+	
+	h1.title {
+		color:green;
+		margin: 0 auto;
+		
+	}
+	
+	
+	.titleWrapper {
+		min-width: 1000px;
+		max-width: 1250px;
+		height:auto;
+		margin:auto;
+		left:50%;
+		background-color:white;
+		opacity:0.9;
+		text-align:center;
+	}
+	
+	.gameContainer {
+		text-align:center;
+		top:50px;
+		left:50%;
+		min-width: 50%;
+		max-width: 1250px;
+		background-color:white;
+		opacity:0.7;
+		border:black;
+		margin:auto;
+	}
+	
+	/*This is stuff for the tab menu at the top. Straight forward stuff.*/
+	.tabs {
+		display:flex;
+		align-items:stretch;
+		justify-content:space-between;
+		overflow:hidden;
+		min-width:1000px;
+		max-width:1250px;
+		margin:auto;
+		background-color:white;
+	}
+	.tabs button {
+		min-width:250px;
+		max-width:300px;
+		flex: 0 1 auto;
+		background-color:inherit;
+		border:none;
+		outline:none;
+		cursor:pointer;
+		padding:14px 16px;
+		transition:0.3s;
+	}
+	.tabs button:hover {
+		background-color:grey;
+	}
+	.tabs button.active {
+		background-color:grey;
+	}
+
+	/*Classes for the tabs proper*/
+	.pBase {
+		display:inline-block;
+		top:50px;
+		min-height:500px;
+		max-height:700px;
+		min-width: 1100px;
+		max-width: 1100px;
+		background-color:white;
+		opacity:0.7;
+		margin:auto;
+	}
+	
+	.column {
+		padding:10px;
+		width:40%;
+		max-width:40%;
+		min-height:100%;
+		overflow-y:auto;
+		overflow-x:hidden;
+	}
+	
+	#leftCol {
+		position:absolute;
+		width:30%;
+		float:left;
+		text-align:left;
+	}
+	
+	#rightCol {
+		position:inline-block;
+		width:40%;
+		float:right;
+		text-align:right;
+	}
+	
+	/*Forest class*/
+	.Forest {
+		display:none;
+	}
+	
+	.Inventory {
+		display:none;
+	}
+	
+	.Options {
+		display:none;
+	}
+	
+}
+/*Max I'm going to be very honest with you, this is only here to do at a later date. Do not do this before the rest of the CSS.*/
+
+@media screen and (min-width:320px) and (max-width:640px) {
+	/* CSS for screens > 320 pixels and < 640px*/
+	body {
+		background-image: url('spacebg.png');
+	}
+	
+	h1.title {
+		color:green;
+	}
+	
+	.titleWrapper {
+		min-width: 320px;
+		max-width: 640px;
+		margin:auto;
+		left:50%;
+		background-color:white;
+		opacity:0.9;
+		text-align:center;
+	}
+	
+	.gameContainer {
+		top:50px;
+		left:50%;
+		min-width: 320px;
+		max-width: 640px;
+		background-color:white;
+		opacity:0.7;
+		border:black;
+		margin:auto;
+	}
+}
+
+@media screen and (min-width:641px) and (max-width: 999px) {
+	/*CSS for screen bigger than 641px and < 999px as 1000+ is reserved for monitors*/
+	body {
+		background-image: url('spacebg.png');
+	}
+	
+	h1.title {
+		color:green;
+	}
+	
+	.titleWrapper {
+		min-width: 641px;
+		max-width: 999px;
+		margin:auto;
+		left:50%;
+		background-color:white;
+		opacity:0.9;
+		text-align:center;
+	}
+	
+	.gameContainer {
+		left:50%;
+		min-width: 640px;
+		max-width: 999px;
+		background-color:white;
+		opacity:0.7;
+		border:black;
+		margin:auto;
+	}
+	
+}
