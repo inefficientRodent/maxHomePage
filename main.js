@@ -41,4 +41,36 @@ function tab(tab) {
 var mainLoop = window.setInterval(function() {
 	document.getElementById("pBaseMessage").innerHTML = "You are at your base. You think it's probably " + gameData.season + "."
 	document.getElementById("pBaseTemp").innerHTML = "It feels " + gameData.temperature + "."
+	if (gameData.health == 10) {
+		document.getElementById("playerHealth").innerHTML = "You feel good."
+	}
+	else if (gameData.health >= 7 && gameData.health < 10){
+		document.getElementById("playerHealth").innerHTML = "You feel okay."
+	}
+	else if (gameData.health >= 5 && gameData.health < 7){
+		document.getElementById("playerHealth").innerHTML = "You feel rough."
+	}
+	else if (gameData.health >= 3 && gameData.health < 5){
+		document.getElementById("playerHealth").innerHTML = "You are hurting bad."
+	}
+	else if (gameData.health >= 2 && gameData.health < 3){
+		document.getElementById("playerHealth").innerHTML = "You wish Doctors were still around."
+	}
+	else if (gameData.health = 1){
+		document.getElementById("playerHealth").innerHTML = "The pain is too much."
+	}
+	else if (gameData.health == 0){
+		gameOver()
+	}
 }, 1000)
+
+function gameOver() {
+	
+}
+
+
+
+/*Dev Content*/
+function DEVhealth(devHealth) {
+	gameData.health = devHealth
+}
