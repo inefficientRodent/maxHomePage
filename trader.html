@@ -1,1 +1,101 @@
 <!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Trader</title>
+<link rel="stylesheet" href="trader.css" type="text/css">
+
+</head>
+
+<body>
+
+
+<div class="resourcePanel">
+
+	<div class="material">
+		<div class="resource" style="text-align:center; width:100%;">
+			Materials
+		</div>
+		
+		<!--Listing for materials-->
+		<div class="resourceContainer">
+			<div class="resource matWood" onmouseover="show('plank')" onmouseout="hide('plank')">
+				Log
+			</div>
+			<div class="resourceAmount">
+				%logAmount%
+			</div>
+		</div>
+			
+		<div class="resourceContainer" style="display:none;" id="plank">
+			<div class="resource matWood" style="text-indent:10%">
+				Plank
+			</div>
+			<div class="resourceAmount">
+				%plankAmount%
+			</div>
+		</div>
+			
+			
+		<div class="resource">
+			
+		</div>
+
+		<div class="resource">
+
+		</div>
+		
+		<div class="resourceContainer" onmouseover="show('brick')" onmouseout="hide('brick')">
+			<div class="resource matStone">
+			Stone Chunk
+			</div>
+			<div class="resourceAmount">
+				%stoneAmount%
+			</div>
+		</div>
+		<div id="brick" class="resourceContainer" style="display:none;">
+			<div class="resource matStone" style="text-indent:10%">
+				Brick
+			</div>
+			<div class="resourceAmount">
+				%brickAmount%
+			</div>
+		</div>
+		
+		
+		<div class="resourceContainer" onmouseover="show('bar')" onmouseout="hide('bar')">
+			<div class="resource matOre">
+			Ore
+			</div>
+			<div class="resourceAmount">
+				%oreAmount%
+			</div>
+		</div>
+		<div class="resourceContainer" style="display:none;" id="bar">
+			<div class="resource matOre" style="text-indent:10%">
+			Metal Bar
+			</div>
+			<div class="resourceAmount">
+				%barAmount%
+			</div>
+		</div>
+		
+	<!--Closing Material Tab-->
+	</div>
+
+	<div class="produce">
+	
+	</div>
+	
+	<div class="luxury">
+	
+	</div>
+
+</div>
+
+<div class="playerActions">
+
+</div>
+
+<script src="trader.js"></script>
+</body>

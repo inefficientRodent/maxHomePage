@@ -1,1 +1,97 @@
-trader.css
+.resourcePanel {
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#ffc929;
+	width:100%;
+	height:30%;
+	min-height:30%;
+}
+
+.playerActions {
+	position:absolute;
+	width:25%;
+	height:70%;
+	top:30%;
+	background-color:#ffc20f;
+	left:0px;
+	min-height:70%;
+}
+
+.material {
+	background-color:white;
+	position:absolute;
+	width:30%;
+	height:90%;
+	top:5%;
+	left:0.66%;
+	overflow-y:scroll;
+}
+
+.resourceContainer {
+	width:100%;
+	display:block;
+}
+
+.resource {
+	width:30%;
+}
+
+.resourceAmount {
+	width:70%;
+	background-color:#ccc9c0;
+	float:right;
+}
+
+.matWood {
+	background-color:brown;
+	float:left;
+}
+
+.matStone {
+	background-color:gray;
+	float:left;
+}
+
+.matOre {
+	background-color:red;
+	float:left;
+}
+
+.produce {
+	background-color:gray;
+	position:absolute;
+	width:30%;
+	height:90%;
+	top:5%;
+	left:33%;
+}
+
+.prodFruit {
+	
+}
+.prodVeg {
+	
+}
+.prodMeat {
+	
+}
+
+.luxury {
+	background-color:black;
+	position:absolute;
+	width:30%;
+	height:90%;
+	top:5%;
+	left:66%;
+}
+
+.luxGem {
+	
+}
+.luxFur {
+	
+}
+.luxAlchemy {
+	
+}
